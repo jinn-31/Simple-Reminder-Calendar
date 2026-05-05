@@ -3,7 +3,7 @@
 A simple but powerful web-based calendar and reminder system built using **HTML, CSS, and JavaScript**.  
 It allows users to schedule reminders, add daily notes, and receive browser notifications — all stored locally in the browser.
 
-REMINDER: The site works perfectly in pc but due to strict limitations on mobile phones and possibly tablets, notifications WON'T work on them.
+REMINDER: The site works perfectly in pc but due to strict browser limitations on mobile phones and possibly tablets, notifications may not work on them.
 
 Date of Creation: May 5, 2026
 ---
