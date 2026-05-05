@@ -276,5 +276,13 @@ document.getElementById("enableNotifBtn").addEventListener("click", async () => 
 // update when date changes
 datePicker.addEventListener("change", renderReminders);
 
+datePicker.addEventListener("change", () => {
+  selectedDate = new Date(datePicker.value);
+  currentDate = new Date(datePicker.value);
+
+  renderCalendar();
+  renderReminders();
+});
+
 // first load
 renderReminders();
