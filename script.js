@@ -258,6 +258,21 @@ function deleteReminder(date, index) {
   renderReminders();
 }
 
+document.getElementById("enableNotifBtn").addEventListener("click", async () => {
+  if (!("Notification" in window)) {
+    alert("Notifications not supported");
+    return;
+  }
+
+  const permission = await Notification.requestPermission();
+
+  if (permission === "granted") {
+    alert("Notifications enabled!");
+  } else {
+    alert("Notifications blocked");
+  }
+});
+
 // update when date changes
 datePicker.addEventListener("change", renderReminders);
 

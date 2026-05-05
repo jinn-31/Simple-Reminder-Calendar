@@ -8,7 +8,6 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-
   <div class="container">
     <h1>📅 Smart Reminder Calendar</h1>
 
@@ -31,7 +30,8 @@
         <button onclick="addReminder()">Add</button>
     </div>
 
-    <h2>Reminders</h2>
+    <h2>Reminders
+      <button id="enableNotifBtn">Enable Notifications</button></h2>
     <ul id="reminderList"></ul>
     <div class="reminder-header">
     <label class="toggle-inline">
@@ -39,13 +39,14 @@
     <span id="timeFormatLabel">24h</span>
   </label>
 </div>
-  </div>
 
+  </div>  
   <div class="notes-box">
   <h2>📝 Notes</h2>
   <textarea id="noteInput" placeholder="Write your notes for this day..."></textarea>
   <button id="saveNoteBtn">Save Note</button>
 </div>
+
 
   <script src="script.js"></script>
   <script>

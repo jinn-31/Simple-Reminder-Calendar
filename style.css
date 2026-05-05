@@ -167,6 +167,13 @@ li {
 
 @media (hover: none) and (pointer: coarse) {
 } 
+
+@media (max-width: 600px) {
+  #noteInput {
+    min-height: 100px;
+  }
+}
+
   .container {
     width: 95%;
     padding: 15px;
