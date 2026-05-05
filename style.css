@@ -3,7 +3,7 @@ body {
   align-items: flex-start;
   background: #0f172a;
   color: white;
-  margin: 0;
+  margin-left: 20px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -38,8 +38,8 @@ h2 {
 }
 
 #noteInput {
-  width: 80%;
-  height: 120px;
+  width: 90%;
+  height: 200px;
   padding: 10px;
   margin-left: 0px;
   border-radius: 5px;
@@ -54,6 +54,10 @@ h2 {
 #saveNoteBtn {
   margin-left: 20px;
   width: 70%;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .calendar-box,
