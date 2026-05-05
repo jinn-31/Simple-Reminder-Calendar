@@ -1,0 +1,236 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.container {
+  width: 300px;
+  margin-top: 10px;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 50%;
+    margin: 10px auto;
+  }
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.day {
+  padding: 8px;
+  font-size: 13px;
+}
+
+.notes-box {
+  margin-left: 10px;
+}
+
+#noteInput {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: none;
+  resize: none;
+  background: #334155;
+  color: white;
+  font-size: 14px;
+}
+
+#saveNoteBtn {
+  margin-left: 30px;
+  width: 100%;
+}
+
+.calendar-box,
+.reminder-box {
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 12px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #334155;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reminder-box input[type="time"] {
+  width: 120px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  padding: 10px;
+  background: #334155;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.day:hover {
+  background: #475569;
+}
+
+.selected-day {
+  background: #3b82f6;
+}
+
+.has-reminder {
+  border: 2px solid #22c55e;
+}
+
+.time-format-toggle {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.reminder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.toggle-inline {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  background: #334155;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.toggle-inline input {
+  cursor: pointer;
+}
+
+@media (hover: none) and (pointer: coarse) {
+} 
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .calendar-grid {
+    gap: 3px;
+  }
+
+  .day {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .reminder-box {
+    flex-direction: column;
+  }
+
+  .reminder-box input,
+  .reminder-box button {
+    width: 100%;
+  }
+
+  button {
+    padding: 12px;
+  }
+
+
+button {
+  min-height: 40px;
+  font-size: 14px;
+}
+
+.day {
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reminder-box input {
+  margin-bottom: 8px;
+}
+
+.calendar-header {
+  font-size: 14px;
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, .day {
+  transition: 0.15s ease;
+}
+
+button:active, .day:active {
+  transform: scale(0.97);
+}
+
+.reminder-header {
+  flex-direction: row;
+  gap: 10px;
+}

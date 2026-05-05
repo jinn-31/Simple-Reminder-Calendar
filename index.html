@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Reminder Calendar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <div class="container">
+    <h1>📅 Smart Reminder Calendar</h1>
+
+    <div class="calendar-box">
+      <label>Select Date:</label>
+      <input type="date" id="datePicker">
+    </div>
+
+    <div class="calendar-header">
+        <button id="prevMonth">◀</button>
+        <h2 id="monthYear"></h2>
+    <button id="nextMonth">▶</button>
+</div>
+
+<div id="calendar" class="calendar-grid"></div>
+
+   <div class="reminder-box">
+        <input type="text" id="reminderInput" placeholder="Enter reminder...">
+        <input type="time" id="timeInput">
+        <button onclick="addReminder()">Add</button>
+    </div>
+
+    <h2>Reminders</h2>
+    <ul id="reminderList"></ul>
+    <div class="reminder-header">
+    <label class="toggle-inline">
+    <input type="checkbox" id="timeFormatToggle">
+    <span id="timeFormatLabel">24h</span>
+  </label>
+</div>
+  </div>
+
+  <div class="notes-box">
+  <h2>📝 Notes</h2>
+  <textarea id="noteInput" placeholder="Write your notes for this day..."></textarea>
+  <button id="saveNoteBtn">Save Note</button>
+</div>
+
+  <script src="script.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js")
+    .then(() => console.log("Service Worker Registered"));
+}
+</script>
+</body>
+</html>
